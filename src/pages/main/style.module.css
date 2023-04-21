@@ -1,0 +1,94 @@
+.App{
+    grid-row-start: 4;
+    grid-row-end: 16;
+    grid-column-start: 5;
+    grid-column-end: 16;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(10, 10%);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.title{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 8;
+}
+
+.title p{
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.subtitle{
+    font-weight: 500;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 8;
+}
+
+.form p{
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.form input{
+    outline: none;
+    padding: 0.8vh 1vw;
+    background-color: white;
+    border: 1px solid rgb(59, 59, 59);
+}
+
+.form input:focus{
+    border: 1.8px solid rgb(30, 30, 30);
+}
+
+.logo{
+    text-transform: uppercase;
+    color: black;
+    font-size: 6vh;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 15;
+    text-shadow: 1px 1px rgb(165, 165, 165);
+}
+
+.submition{
+    position: relative;
+    top: 2vh;
+    left: 8vw;
+    justify-self: center;
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: none;
+    background-color: black;
+    height: 4vh;
+    width: 6vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.eye{
+    position: absolute;
+    bottom: 43.5vh;
+    right: 42vw;
+    width: 2vh;
+    height: 2vh;
+}
