@@ -2,6 +2,7 @@ import Note from "../../components/record";
 import style from "./style.module.css";
 import logout from "../../assets/logout.svg";
 import search from "../../assets/search.svg";
+import { NavLink } from "react-router-dom";
 
 const SecondPage = () => {
   return (
@@ -14,10 +15,10 @@ const SecondPage = () => {
         <a href="#" className={style.link_2}>
           <p>Project Report</p>
         </a>
-        <div className={style.logOut}>
+        <NavLink to="/" className={style.logOut}>
           <img src={logout} alt="" />
-          <p>Log Out</p>
-        </div>
+            <p>Log Out</p>
+        </NavLink>
       </div>
       <div className={style.subHeader}>
         <div className={style.filterByName}>
